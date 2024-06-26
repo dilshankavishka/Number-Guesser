@@ -1,8 +1,8 @@
 document.getElementById("guess").addEventListener("click",Guess);
-
+let numbercheck= Math.floor((Math.random()*10)+1);
 function Guess(){
     let numberin = Number(document.getElementById("number1").value);
-    let numbercheck= Math.floor((Math.random()*10)+1);
+   
 
     if(numberin>numbercheck){
         document.getElementById("help").value= "Your Guess is too high";
